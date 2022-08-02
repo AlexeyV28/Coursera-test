@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Coursera!</title>
+    <style>
+        body{
+ background-color: rgb(236, 95, 14);
+
+}  
+.box{
+            border: 40px solid rgb(233, 55, 55);           
+           border-radius: 50%;
+            width:400px;
+            height:400px;
+            margin: auto;
+            margin-top: 250px;
+            border-top: 40px solid rgb(70, 3, 3);
+            animation: 3s linear 0s infinite spiner;
+            transition: 1s linear ;
+            
+        }
+        .box:hover{
+            transform: rotate(360deg);
+            cursor: pointer;
+        }
+        @keyframes spiner{
+            0%{
+                transform: rotate(0deg);
+                
+                
+            }
+            100%{
+                transform: rotate(-360deg);
+
+                  border: 40px solid rgb(85, 233, 55); 
+                  border-top: 40px solid rgb(55, 151, 10);
+                
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello Coursera! For fucks sake it is a great COURSE!!!!!!!!!</h1>
-</body>
+    <div class="box"></div>
+  </body>
 </html>
